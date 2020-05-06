@@ -11,7 +11,11 @@
         document.getElementById ("hasil").value += a;
     }
     function samadgn(){
+        if( a === undefined){
+            document.getElementById ("hasil").value ='';
+        }else{
         document.getElementById ("hasil").value = eval(document.getElementById ("hasil").value);
+        }
     }
     function ac(){
         document.getElementById ("hasil").value="";
