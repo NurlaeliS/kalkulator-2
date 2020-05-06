@@ -1,0 +1,92 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #679b9b;
+    
+}
+@font-face{
+    font-family: digital;
+    src: url(DS-DIGI.TTF)
+}
+
+.kalk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 50px;
+    
+}
+
+table{
+    width: 60%;
+}
+
+input{
+    width: 282px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 0;
+    font-family: digital;
+    text-align: right;
+    font-size: 3rem;
+    padding: 5px;
+}
+button {
+    width: 70px;
+    height: 70px;
+    background-color: #aacfcf;
+    color: #ffffff;
+    border: 0;
+    font-weight: border;
+    font-size: 20px;
+    font-family: digital;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #6ddbee;
+    box-shadow: 0 0 7px #6ddbee;
+}
+.samadengan{
+    height: 145px;
+    background-color: rgb(241, 156, 241);
+}
+.samadengan:hover{
+    background-color: violet;
+}
+.ac{
+    background-color: #dd4b64;
+}
+.titik{
+    font-size: 30px;
+}
+.ac:hover{
+    background-color: #e72343;
+}
+.del{
+    background-color: #e4c96b;
+}
+.del:hover{
+    background-color: #f8c610;
+}
+
+@media (max-width: 500px){
+    .kalk{
+        width: 100%;
+        margin-left: 11%;
+    }
+    table{
+        width: 100%;
+    }
+    button{
+        width: 90px;
+        height: 90px;
+    }
+    input{
+        width: 98%;
+    }
+    .samadengan{
+        height: 184px;
+
+}

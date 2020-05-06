@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator 2</title>
+</head>
+<script type="text/javascript">
+    function myclick(a){
+        document.getElementById ("hasil").value += a;
+    }
+    function samadgn(){
+        document.getElementById ("hasil").value = eval(document.getElementById ("hasil").value);
+    }
+    function ac(){
+        document.getElementById ("hasil").value="";
+    }
+    function hapus(){
+        var dihapus = document.getElementById ("hasil").value;
+        document.getElementById ("hasil").value = dihapus.substr(0,dihapus.length-1);
+    }
+</script>
+<body>
+    <div class="kalk">
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" class="hasil" id="hasil" placeholder="0"></td>
+        </tr>
+         <tr>
+             <td><button class="ac" onclick="ac ()">AC</button></td>
+             <td><button class="del" onclick="hapus ()">DEL</button></td>
+             <td><button onclick="myclick('/')">/</button> </td>
+             <td><button onclick="myclick ('*')">*</button></td>
+         </tr>
+         <tr>
+             <td><button onclick="myclick ('7')">7</button></td>
+             <td><button onclick="myclick ('8')">8</button></td>
+             <td><button onclick="myclick ('9')">9</button></td>
+             <td><button onclick="myclick ('+')">+</button> </td>
+         </tr>
+         <tr>
+            <td><button onclick="myclick ('4')">4</button></td>
+            <td><button onclick="myclick ('5')">5</button></td>
+            <td><button onclick="myclick ('6')">6</button></td>
+            <td><button onclick="myclick ('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="myclick ('1')">1</button></td>
+            <td><button onclick="myclick ('2')">2</button></td>
+            <td><button onclick="myclick ('3')">3</button></td>
+            <td rowspan="2"><button class="samadengan" onclick="samadgn ()">=</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="myclick ('0')">0</button></td>
+            <td><button onclick="myclick ('00')">00</button></td>
+            <td><button class="titik" onclick="myclick ('.')">.</button></td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>
